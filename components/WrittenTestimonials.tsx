@@ -11,16 +11,16 @@ const testimonials = [
 
 const WrittenTestimonials: React.FC = () => {
   return (
-    <div className="py-20 border-y border-white/5 bg-black overflow-hidden relative">
+    <div className="py-12 border-y border-white/5 bg-black overflow-hidden relative">
       <div className="flex animate-marquee whitespace-nowrap">
         {[...testimonials, ...testimonials, ...testimonials].map((t, i) => (
-          <div key={i} className="flex items-center gap-6 px-12 group">
-            <span className="text-[#00FF00] font-monument text-3xl opacity-50">"</span>
-            <span className="font-monument text-2xl md:text-3xl text-zinc-300 group-hover:text-white transition-colors uppercase tracking-tight">
+          <div key={i} className="flex items-center gap-4 px-10 group">
+            <span className="text-[#00FF00] font-monument text-xl opacity-40">"</span>
+            <span className="font-monument text-lg md:text-[18px] text-zinc-300 group-hover:text-white transition-colors uppercase tracking-tight font-bold">
               {t.quote}
             </span>
-            <span className="font-mono text-zinc-600">— {t.name}</span>
-            <div className="w-12 h-[1px] bg-zinc-800 ml-6"></div>
+            <span className="font-mono text-zinc-600 text-[13px]">— {t.name}</span>
+            <div className="w-8 h-[1px] bg-zinc-800 ml-4"></div>
           </div>
         ))}
       </div>

@@ -16,11 +16,21 @@
         --lime-accent: #CCFF00;
         --pitch-black: #000000;
         --dark-grey: #1A1A1A;
+        
+        /* Refined Proportions */
+        --text-hero: 56px;
+        --text-section: 36px;
+        --text-card-title: 18px;
+        --text-body: 15px;
+        --text-sm: 13px;
+        --text-xs: 11px;
       }
       body {
         background-color: var(--pitch-black);
         color: #FFFFFF;
         font-family: 'Space Grotesk', sans-serif;
+        font-size: var(--text-body);
+        line-height: 1.6;
         overflow-x: hidden;
       }
       .font-monument {
@@ -72,6 +82,18 @@
       }
       ::-webkit-scrollbar-thumb:hover {
         background: #333;
+      }
+      
+      /* Global Spacing Reductions */
+      section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+      @media (max-width: 768px) {
+        section {
+          padding-top: 60px;
+          padding-bottom: 60px;
+        }
       }
     </style>
   <script type="importmap">

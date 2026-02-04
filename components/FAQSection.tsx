@@ -7,15 +7,15 @@ const FAQItem: React.FC<{ q: string; a: string }> = ({ q, a }) => {
     <div className="border-b border-white/5 last:border-0">
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full py-8 flex items-center justify-between text-left group"
+        className="w-full py-5 flex items-center justify-between text-left group"
       >
-        <span className={`text-xl md:text-2xl font-monument transition-colors ${isOpen ? 'text-[#00FF00]' : 'text-white'}`}>{q}</span>
-        <div className={`w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center transition-all ${isOpen ? 'rotate-45 text-[#00FF00] scale-110' : 'text-zinc-500'}`}>
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"/></svg>
+        <span className={`text-[17px] md:text-[19px] font-bold font-monument transition-colors tracking-tight ${isOpen ? 'text-[#00FF00]' : 'text-white'}`}>{q}</span>
+        <div className={`w-8 h-8 rounded-full bg-zinc-900 flex items-center justify-center transition-all ${isOpen ? 'rotate-45 text-[#00FF00] scale-110' : 'text-zinc-500'}`}>
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"/></svg>
         </div>
       </button>
-      <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-96 pb-8' : 'max-h-0'}`}>
-        <p className="text-zinc-400 text-lg leading-relaxed max-w-4xl">{a}</p>
+      <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-96 pb-6' : 'max-h-0'}`}>
+        <p className="text-zinc-400 text-[15px] leading-relaxed max-w-3xl">{a}</p>
       </div>
     </div>
   );
@@ -23,11 +23,11 @@ const FAQItem: React.FC<{ q: string; a: string }> = ({ q, a }) => {
 
 const FAQSection: React.FC = () => {
   return (
-    <div className="py-32 bg-black px-6">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-20 fade-up">
-          <h2 className="font-monument text-4xl md:text-6xl mb-6 uppercase tracking-tight">"IS THIS WORTH IT?"</h2>
-          <p className="text-zinc-500 text-xl font-mono uppercase tracking-widest">Objection Crusher</p>
+    <div className="py-20 bg-black px-6">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-16 fade-up">
+          <h2 className="font-monument text-2xl md:text-[36px] mb-3 uppercase tracking-tight">"IS THIS WORTH IT?"</h2>
+          <p className="text-zinc-500 text-[13px] font-mono uppercase tracking-[0.2em] font-medium opacity-70">Objection Crusher</p>
         </div>
         
         <div className="fade-up">
@@ -37,7 +37,7 @@ const FAQSection: React.FC = () => {
           />
           <FAQItem 
             q="HOW LONG DOES IT TAKE?"
-            a="Typically 4 to 6 weeks. We prioritize speed but refuse to compromise on quality. You'll have a fully functioning, high-performance machine in your hands faster than most agencies can finish a 'mood board'."
+            a="Typically 4 to 6 weeks. We prioritize speed but refuse to compromise on quality. You'll have a fully functioning, high-performance machine in your hands faster than most traditional agencies."
           />
           <FAQItem 
             q="WHAT IF I DON'T KNOW WHAT TO SAY ON THE SITE?"
@@ -45,7 +45,7 @@ const FAQSection: React.FC = () => {
           />
           <FAQItem 
             q="IS THIS ONLY FOR CERTAIN INDUSTRIES?"
-            a="We work with anyone who sells high-value services or products and needs to build trust at scale. From construction to consulting, the psychological triggers for buying remain the same—and we know how to pull them."
+            a="We work with anyone who sells high-value services or products and needs to build trust at scale. The psychological triggers for buying remain the same—and we know how to pull them."
           />
         </div>
       </div>
