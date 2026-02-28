@@ -2,11 +2,9 @@
 import React, { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import VideoSection from './components/VideoSection';
 import ProblemAwareness from './components/ProblemAwareness';
 import SolutionSection from './components/SolutionSection';
 import ProcessSection from './components/ProcessSection';
-import VideoTestimonials from './components/VideoTestimonials';
 import WrittenTestimonials from './components/WrittenTestimonials';
 import ServicesSection from './components/ServicesSection';
 import FAQSection from './components/FAQSection';
@@ -40,10 +38,6 @@ const App: React.FC = () => {
           <Hero />
         </section>
         
-        <section id="video-results">
-          <VideoSection />
-        </section>
-        
         <section id="problem">
           <ProblemAwareness />
         </section>
@@ -57,10 +51,6 @@ const App: React.FC = () => {
         </section>
         
         <section id="work">
-          <VideoTestimonials />
-        </section>
-        
-        <section>
           <WrittenTestimonials />
         </section>
         
